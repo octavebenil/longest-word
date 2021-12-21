@@ -4,6 +4,5 @@ dist: xenial
 install:
   - pip install pipenv
   - pipenv install --dev
-  - pip install --no-binary pyenchant
 script:
   - pipenv run nosetests
