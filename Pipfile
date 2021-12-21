@@ -5,6 +5,7 @@ name = "pypi"
 
 [packages]
 pyenchant = "*"
+flask = "*"
 
 [dev-packages]
 nose = "*"

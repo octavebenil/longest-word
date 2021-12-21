@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf8" />
+    <title>Longest Word</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <h1>Longest Word</h1>
+    <h2>Result</h2>
+    <div>
+      {% for letter in grid %}
+        <span class="letter">{{ letter }}</span>
+      {% endfor %}
+    </div>
+    <div id="results">
+      Your word: <strong>{{ word }}</strong>.
+      {% if is_valid %}
+        <span class="valid">Congrats, it's valid!</span>
+      {% else %}
+        <span class="invalid">Sorry, it's invalid...</span>
+      {% endif %}
+    </div>
+    <div>
+      <a href="/">New game</a>
+    </div>
+  </body>
+</html>
