@@ -13,6 +13,9 @@ body {
     text-align: center;
     background-color: #333;
     color: #eee;
+
+    background-color: #FFEB3B;
+    color: #666;
   }
   #form, #results {
     margin: 1em 0;
