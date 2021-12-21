@@ -1,6 +1,6 @@
 import string
 import random
-import enchant
+import requests
 
 class Game():
     def __init__(self):
@@ -19,9 +19,6 @@ class Game():
                 return False
 
         #on verifie si le mot est dans le dictionnaire anglais et francais
-        d_eng = enchant.Dict("en_US")
-
-        if d_eng.check(word):
-            return True
-
-        return False     
+        response = requests.get(f"https://wagon-dictionary.herokuapp.com/{word}")
+        json_response = response.json()
+        return json_response['found']
