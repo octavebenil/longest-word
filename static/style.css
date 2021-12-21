@@ -1,0 +1,25 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .letter {
+    border: 1px solid #999;
+    padding: 8px 6px;
+    width: 24px;
+    display: inline-block;
+    text-align: center;
+    background-color: #333;
+    color: #eee;
+  }
+  #form, #results {
+    margin: 1em 0;
+  }
+  .valid {
+    color: green;
+  }
+  .invalid {
+    color: red;
+  }
